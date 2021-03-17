@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap");
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #f7f7f7;
+}
+
+nav {
+  height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: transparent;
+  -webkit-clip-path: circle(0% at 100% 0);
+          clip-path: circle(0% at 100% 0);
+  -webkit-transition: 500ms ease-out;
+  transition: 500ms ease-out;
+}
+
+nav ul {
+  list-style: none;
+  text-align: center;
+}
+
+nav ul li {
+  font-size: 5rem;
+  margin: 25px 0;
+  text-transform: uppercase;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: transparent;
+  -webkit-text-stroke: 1px #f7f7f7;
+  -webkit-transition: 250ms ease-in-out;
+  transition: 250ms ease-in-out;
+}
+
+nav ul li a:hover {
+  color: #f7f7f7;
+  letter-spacing: 2px;
+}
+
+nav.show {
+  background: #191919;
+  -webkit-clip-path: circle(100% at 50% 50%);
+          clip-path: circle(100% at 50% 50%);
+}
+
+.hamburger {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 4rem;
+  height: 2rem;
+  cursor: pointer;
+}
+
+.hamburger .bar {
+  position: absolute;
+  height: 2px;
+  width: 80%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: #191919;
+  -webkit-transition: 250ms ease-in-out;
+  transition: 250ms ease-in-out;
+}
+
+.hamburger #bar1 {
+  top: 25%;
+}
+
+.hamburger #bar2 {
+  top: 75%;
+}
+
+.hamburger.cross #bar1,
+.hamburger.cross #bar2 {
+  top: 50%;
+  background: #f7f7f7;
+  -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+          transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.hamburger.cross #bar2 {
+  -webkit-transform: translate(-50%, -50%) rotate(45deg);
+          transform: translate(-50%, -50%) rotate(45deg);
+}
+/*# sourceMappingURL=style.css.map */
